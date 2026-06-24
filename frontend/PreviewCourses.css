@@ -1,0 +1,159 @@
+.preview-courses-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem;
+  }
+  
+  .preview-courses-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .filter-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .course-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .course-info h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .course-info p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+  }
+  
+  .course-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subject-tag, .level-tag {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .subject-tag {
+    background-color: #e0f7fa;
+    color: #00838f;
+  }
+  
+  .level-tag {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .level-tag.intro {
+    background-color: #e3f2fd;
+    color: #1565c0;
+  }
+  
+  .level-tag.intermediate {
+    background-color: #fff8e1;
+    color: #ff8f00;
+  }
+  
+  .level-tag.advanced {
+    background-color: #fce4ec;
+    color: #ad1457;
+  }
+  
+  .preview-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .preview-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Subject-specific image styling */
+  .course-image[style*="math.jpg"] {
+    background-color: #5d6bc0;
+  }
+  
+  .course-image[style*="science.jpg"] {
+    background-color: #66bb6a;
+  }
+  
+  .course-image[style*="english.jpg"] {
+    background-color: #ffa726;
+  }
+  
+  .course-image[style*="computer-science.jpg"] {
+    background-color: #78909c;
+  }

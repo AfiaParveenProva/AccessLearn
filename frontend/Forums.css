@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/fonts/OpenDyslexic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Global Styles */
+body {
+  font-family: 'OpenDyslexic', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+/* Forum Container */
+.forum-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Form */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.post-form h2 {
+  color: #3498db;
+}
+
+.post-form input,
+.post-form textarea,
+.post-form select {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.post-form input:focus,
+.post-form textarea:focus,
+.post-form select:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #eaf7ff;
+}
+
+.post-form button {
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Post List */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 8px solid #3498db;
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #34495e;
+}
+
+.post p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+.post .category {
+  font-size: 0.9rem;
+  color: #95a5a6;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Filter */
+.filter-container {
+  margin-bottom: 30px;
+}
+
+.filter-container h3 {
+  font-size: 1.2rem;
+  color: #2980b9;
+}
+
+.filter-container select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.filter-container select:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #eaf7ff;
+}
+/* Search bar */
+.search-bar {
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Sort dropdown */
+.sort-select {
+  padding: 8px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
