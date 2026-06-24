@@ -1,21 +1,26 @@
-**🎓 Inclusive Learning Platform for SDG 4: Quality Education**
+---
+
+**🎓 AccessLearn — Inclusive Learning Platform for SDG 4: Quality Education**
 
 **Overview**
 
-It is a full-stack web application designed to break down educational barriers for students with disabilities and underserved communities worldwide. Built as a group project by 8 Computer Science students at Brunel University London, the platform delivers high-quality, curated learning resources through an interface built from the ground up with accessibility at its core — not as an afterthought.
+EduAccess is a full-stack web application designed to break down educational barriers for students with disabilities and underserved communities worldwide. Built as a group project by 8 Computer Science students at Brunel University London, the platform delivers high-quality, curated learning resources through an interface built from the ground up with accessibility at its core — not as an afterthought.
 
 The project directly addresses **UN Sustainable Development Goal 4 (Quality Education)**, with intersecting impact on SDG 10 (Reduced Inequalities) and SDG 8 (Decent Work and Economic Growth).
 
+---
 
 **The Problem**
 
 Millions of students with visual, auditory, and cognitive impairments are left behind by mainstream e-learning platforms that treat accessibility as optional. In underserved regions across Sub-Saharan Africa, South Asia, and Latin America, this gap is even wider — limited infrastructure, lack of assistive technology support, and poorly curated content create compounding barriers that restrict both educational and economic opportunity.
 
+---
 
 **The Solution**
 
 A purpose-built, inclusive web platform that combines accessibility-first design with curated educational content — empowering students to learn at their own pace regardless of location, language, or physical ability.
 
+---
 
 **✨ Key Features**
 
@@ -26,6 +31,7 @@ A purpose-built, inclusive web platform that combines accessibility-first design
 - **Personalised Learning Paths** — Adaptive content delivery with progress tracking, allowing students to engage with material in ways that suit their learning style
 - **Community Forums** — Monitored discussion boards offering peer support and low-bandwidth options, reducing the isolation often experienced by students with disabilities
 
+---
 
 **🛠️ Tech Stack**
 
@@ -52,12 +58,10 @@ The project was delivered across 4 Agile Scrum sprints:
 
 **👥 Team**
 
-8-member cross-functional team covering Frontend Development, Backend Development, Content Curation, Project Management, and Quality Assurance.
+8-member cross-functional team covering Frontend Development, Backend Development, Content Curation, Project Management, and Quality Assurance. My contributions include keayboard navigation, books, polls, survey, flashcards etc. 
 
 ---
 
 > *"We're not just building a digital platform — we're empowering individuals to learn, grow, and access new opportunities."*
 
 ---
-
-My contributions include keyboard navigation, books, polls, survey, flashcards etc.
