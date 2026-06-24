@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Course Feedback Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div class="survey-container">
+        <h2>Course Feedback Survey</h2>
+        <form id="surveyForm">
+            <!-- HTML Section -->
+            <h3>1. HTML Feedback</h3>
+
+            <h4>1.1. How would you rate the clarity of the HTML lessons?</h4>
+            <label><input type="radio" name="html_clarity" value="Excellent"> Excellent</label><br>
+            <label><input type="radio" name="html_clarity" value="Good"> Good</label><br>
+            <label><input type="radio" name="html_clarity" value="Fair"> Fair</label><br>
+            <label><input type="radio" name="html_clarity" value="Poor"> Poor</label><br>
+
+            <h4>1.2. What HTML topic would you like to learn more about?</h4>
+            <textarea name="html_feedback" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br>
+
+            <!-- CSS Section -->
+            <h3>2. CSS Feedback</h3>
+
+            <h4>2.1. How confident are you in applying CSS to a web page?</h4>
+            <label><input type="radio" name="css_confidence" value="Very Confident"> Very Confident</label><br>
+            <label><input type="radio" name="css_confidence" value="Somewhat Confident"> Somewhat Confident</label><br>
+            <label><input type="radio" name="css_confidence" value="Not Confident"> Not Confident</label><br>
+
+            <h4>2.2. What CSS concept was the hardest for you to understand?</h4>
+            <textarea name="css_feedback" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br>
+
+            <!-- JavaScript Section -->
+            <h3>3. JavaScript Feedback</h3>
+
+            <h4>3.1. How do you rate the pacing of the JavaScript lessons?</h4>
+            <label><input type="radio" name="js_pacing" value="Too Fast"> Too Fast</label><br>
+            <label><input type="radio" name="js_pacing" value="Just Right"> Just Right</label><br>
+            <label><input type="radio" name="js_pacing" value="Too Slow"> Too Slow</label><br>
+
+            <h4>3.2. What feature of JavaScript would you like to see covered in future lessons?</h4>
+            <textarea name="js_feedback" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br>
+
+            <!-- Submit Button -->
+            <button type="button" onclick="submitSurvey()">Submit Feedback</button>
+        </form>
+
+        <h3>Survey Results:</h3>
+        <div id="results"></div>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+
+</html>

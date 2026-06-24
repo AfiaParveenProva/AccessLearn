@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Poll</title>
+    <link rel="stylesheet" href="polls.css">
+</head>
+
+<body>
+    <div class="poll-container">
+        <h2>Tell Us About Your Programming Preferences!</h2>
+        <form id="pollForm">
+
+            <h3>1. What is your favorite programming language?</h3>
+            <label><input type="radio" name="language" value="JavaScript"> JavaScript</label><br>
+            <label><input type="radio" name="language" value="Python"> Python</label><br>
+            <label><input type="radio" name="language" value="Java"> Java</label><br>
+
+            <h3>2. What type of projects do you enjoy?</h3>
+            <label><input type="radio" name="project" value="Web Development"> Web Development</label><br>
+            <label><input type="radio" name="project" value="Data Science"> Data Science</label><br>
+            <label><input type="radio" name="project" value="Mobile Apps"> Mobile Apps</label><br>
+
+            <h3>3. Which feature do you want most in our platform?</h3>
+            <label><input type="radio" name="feature" value="Interactive Coding"> Interactive Coding</label><br>
+            <label><input type="radio" name="feature" value="Project-Based Learning"> Project-Based Learning</label><br>
+            <label><input type="radio" name="feature" value="Live Coding Sessions"> Live Coding Sessions</label><br>
+
+            <button type="button" onclick="submitPoll()">Submit</button>
+        </form>
+
+        <h3>Results:</h3>
+        <div id="results"></div>
+    </div>
+
+    <script src="polls.js"></script>
+</body>
+
+</html>

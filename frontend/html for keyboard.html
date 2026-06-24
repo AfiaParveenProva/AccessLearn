@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Management</title>
+</head>
+<body>
+    <!-- Profile Navigation Structure -->
+    <div class="profile-section" role="navigation" aria-label="Profile Management">
+        <button class="horizontal-nav-item" tabindex="0">Edit Profile</button>
+        
+        <!-- Settings Menu -->
+        <button class="horizontal-nav-item submenu-trigger" 
+                aria-haspopup="true" 
+                aria-expanded="false" 
+                aria-controls="settingsSubmenu">
+            Settings
+        </button>
+        <div id="settingsSubmenu" class="submenu" role="menu" hidden>
+            <button role="menuitem" tabindex="0">Account Settings</button>
+            <button role="menuitem" tabindex="0">Privacy Settings</button>
+            <button role="menuitem" tabindex="0">Notification Settings</button>
+        </div>
+
+        <button class="horizontal-nav-item" tabindex="0">Security</button>
+        <button class="horizontal-nav-item" tabindex="0">Logout</button>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="Keyboard navigation.js"></script>
+</body>
+</html>
+   

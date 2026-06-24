@@ -1,0 +1,524 @@
+
+
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/fonts/OpenDyslexic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenDyslexic', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Homepage Styles */
+.homepage {
+  font-family: 'OpenDyslexic', sans-serif;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Dashboard Section */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Menu Container (vertical layout) */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+/* Menu Box Style */
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Background Image for Menu Box */
+.menu-box-background {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Menu Box Content */
+.menu-box-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-box-content h3 {
+  font-size: 1.6rem;
+  color: #34495e;
+}
+
+.menu-box-content p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  margin-top: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #34495e;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.feature-box h3 {
+  font-size: 1.4rem;
+  color: #34495e;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Button Style */
+.get-started-button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #2980b9;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f0f4f8;
+}
+
+.login-form-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 82, 204, 0.08);
+}
+
+.login-form-box h2 {
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.register-link {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-form-box {
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+  z-index: 9999;
+}
+
+/* Hide the default cursor */
+body {
+  cursor: none; /* Hides the default cursor */
+}
+
+/* Custom cursor styles */
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #3498db; /* Change this to your desired color */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent the cursor from interfering with elements */
+  transform: translate(-50%, -50%); /* Centers the cursor */
+  transition: transform 0.1s ease, opacity 0.1s ease;
+  z-index: 9999;
+  opacity: 1;
+}
+
+/* Add some hover effect to the cursor when hovering over clickable items */
+a:hover .cursor, button:hover .cursor {
+  transform: translate(-50%, -50%) scale(1.5); /* Scale up the cursor */
+  opacity: 0.7; /* Slight opacity change on hover */
+}
+
+.testimonials-section {
+  text-align: center; /* Center the text */
+  padding: 2rem;
+}
+
+.testimonials-section h2 {
+  margin-bottom: 1rem;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Adjust the spacing as needed */
+}
+
+.feature-box {
+  max-width: 300px; /* Optional: adjust based on design */
+  text-align: center; /* Center the text in each box */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.feature-box p {
+  font-style: italic;
+}
+
+.feature-box h4 {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.support-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.spacer {
+  height: 50px; 
+  background: transparent; 
+}
+
+.support-header {
+  background: #1e88e5;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.support-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  background: #4ade80;
+  border-radius: 50%;
+}
+
+.chat-window {
+  height: 400px;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+.message {
+  max-width: 70%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  line-height: 1.4;
+}
+
+.message.user {
+  background: #3498db;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.message.support {
+  background: #e5e7eb;
+  color: #111827;
+  margin-right: auto;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.message-form {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.message-form button {
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Add to your global CSS */
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark a {
+  color: #1abc9c;
+}
+
+.dyslexic-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.increased-line-spacing {
+  line-height: 2;
+}
+
+.increased-letter-spacing {
+  letter-spacing: 0.15em;
+}
+
+/* Dark mode panel styles (your existing .dark-panel styles) */
+.dark-panel {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark a {
+  color: #bb86fc;
+}
+
+.dark button {
+  background-color: #333;
+  color: white;
+}
+
+/* Other accessibility styles */
+.dyslexic-font {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.increased-line-spacing {
+  line-height: 1.6;
+}
+
+.increased-letter-spacing {
+  letter-spacing: 0.1em;
+}
