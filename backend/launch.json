@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AuthApplication<profile>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.profile.AuthApplication",
+            "projectName": "profile",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
