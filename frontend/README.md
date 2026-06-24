@@ -1,12 +1,82 @@
-# React + Vite
+# Accessibility Feature Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This directory contains the accessibility feature components that provide various accessibility options for users. The feature includes a floating accessibility button that opens a panel with multiple accessibility settings.
 
-Currently, two official plugins are available:
+## Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### AccessibilityButton
+A floating button component that opens the accessibility settings panel. Features:
+- Fixed position in bottom-right corner
+- High contrast black design
+- Clear settings icon
+- Responsive design
+- Keyboard accessible
 
-## Expanding the ESLint configuration
+### AccessibilityPanel
+A sliding panel that contains various accessibility settings. Features:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Text Size Adjustment (12px - 24px)
+2. Contrast Control (50% - 200%)
+3. Color Vision Modes:
+   - Normal
+   - Protanopia (Red-Blind)
+   - Deuteranopia (Green-Blind)
+   - Tritanopia (Blue-Blind)
+4. Display Modes:
+   - Light
+   - Dark
+5. Reading Assistance:
+   - Dyslexic Font
+   - Line Spacing
+   - Letter Spacing
+6. Reset All Settings button
+
+## Usage
+
+Import and use the components in your React application:
+
+```jsx
+import React, { useState } from 'react';
+import AccessibilityButton from './components/accessibility/AccessibilityButton';
+import AccessibilityPanel from './components/accessibility/AccessibilityPanel';
+
+function App() {
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+  return (
+    <>
+      {/* SVG Filters for Color Vision */}
+      <svg className="svg-filters" aria-hidden="true">
+        <defs>
+          {/* Color vision filter matrices */}
+        </defs>
+      </svg>
+
+      <AccessibilityButton onClick={() => setIsPanelOpen(true)} />
+      
+      {isPanelOpen && (
+        <AccessibilityPanel 
+          onClose={() => setIsPanelOpen(false)} 
+        />
+      )}
+
+      {/* Your app content */}
+    </>
+  );
+}
+```
+
+## Styling
+The components come with their own CSS files that handle all styling, including:
+- Responsive design
+- Dark mode support
+- Hover and focus states
+- Mobile-friendly layouts
+
+## Accessibility Features
+- ARIA labels for buttons and controls
+- Keyboard navigation support
+- High contrast options
+- Screen reader friendly
+- Responsive to system preferences
+- Color vision deficiency support 

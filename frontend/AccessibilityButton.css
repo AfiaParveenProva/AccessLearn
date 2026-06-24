@@ -1,0 +1,53 @@
+.accessibility-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.2s ease;
+}
+
+.accessibility-button .icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.accessibility-button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.accessibility-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.accessibility-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .accessibility-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+  .accessibility-button .icon {
+    width: 20px;
+    height: 20px;
+  }
+} 

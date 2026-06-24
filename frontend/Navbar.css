@@ -1,0 +1,82 @@
+/* ===== RESET NAVBAR STYLES ===== */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 60px !important;
+  background: #1e88e5 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 20px !important;
+  z-index: 1000 !important;
+}
+
+/* Left-aligned links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Center logo */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Profile button (FORCED VISIBLE) */
+.profile-button {
+  width: 50x !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 3px solid rgb(0, 0, 0) !important;
+  display: block !important;
+  background: rgb(13, 71, 148) !important; /* Temporary to force visibility */
+}
+.nav-icon {
+  width: 50px !important;    /* Smaller than profile button */
+  height: 50px !important;
+  min-width: 20px !important; /* Prevents flexbox distortion */
+}
+
+.nav-icon img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+.profile-button img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.navbar {
+  padding: 0 0px !important; /* Reduce side padding */
+}
+
+.nav-icon {
+  background: transparent; /* Makes the background transparent */
+  border: none;           /* Removes any border */
+  padding: 0;             /* Removes default padding */
+  cursor: pointer;        /* Ensures it looks clickable */
+  outline: none;          /* Removes focus outline */
+}
+
+.nav-icon img {
+  display: block;        
+  width: 5px;            
+  height: 5px;
+  object-fit: cover;           
+}
