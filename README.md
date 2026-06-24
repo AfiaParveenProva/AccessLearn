@@ -1,5 +1,3 @@
----
-
 **🎓 AccessLearn — Inclusive Learning Platform for SDG 4: Quality Education**
 
 **Overview**
